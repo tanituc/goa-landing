@@ -1,0 +1,100 @@
+.promos {
+  background: var(--color-primary);
+}
+
+.carousel-slide {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.slide-badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.slide-content h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.slide-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.slide-prices {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
+.price-new {
+  color: var(--color-cta);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.slide-cta {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  border-radius: 25px !important;
+  font-weight: bold;
+}
+
+.slide-cta:hover {
+  background: #128C7E !important;
+  border-color: #128C7E !important;
+}
+
+/* AntD overrides */
+.ant-carousel .slick-dots li button {
+  height: 4px !important;
+  background: white !important;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background: var(--color-accent) !important;
+}
+
+@media (min-width: 768px) {
+  .slide-content h3 { font-size: 3rem; }
+  .slide-content p { font-size: 1.3rem; }
+}

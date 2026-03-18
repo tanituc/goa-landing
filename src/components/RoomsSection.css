@@ -1,0 +1,152 @@
+.rooms-section {
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.room-card {
+  border-radius: var(--radius) !important;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.room-card .ant-card-cover {
+  margin: 0 !important;
+}
+
+.room-image {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.room-card .ant-card-body {
+  padding: 15px !important;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.room-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.room-content h3 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.room-tagline {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.room-features li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.feat-icon {
+  color: var(--color-accent);
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.room-price-box {
+  background: #f0f8ff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.room-old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.room-new-price {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.room-new-price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666;
+}
+
+.room-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.room-btn-primary {
+  flex: 2;
+  background: var(--color-cta);
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.room-btn-primary:hover {
+  background: #e0961b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.room-btn-secondary {
+  flex: 1;
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.room-btn-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .room-image {
+    height: 300px;
+  }
+}
