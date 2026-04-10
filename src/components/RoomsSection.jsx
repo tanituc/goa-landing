@@ -52,7 +52,7 @@ const RoomsSection = () => {
                 bordered={false}
                 cover={
                   <Image.PreviewGroup>
-                    <Carousel autoplay swipeToSlide draggable infinite={false} className="room-carousel">
+                    <Carousel swipeToSlide draggable infinite={false} className="room-carousel">
                       {room.images.map((img, index) => (
                         <div key={index}>
                           <Image
