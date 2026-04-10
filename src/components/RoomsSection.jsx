@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Space } from 'antd';
+import { Card, Row, Col, Space, Carousel, Image } from 'antd';
 import { CheckCircleOutlined, WhatsAppOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import './RoomsSection.css';
 
@@ -12,7 +12,11 @@ const RoomsSection = () => {
       oldPrice: '$100.000',
       newPrice: '$50.000',
       features: ['Cama doble', 'Ambiente silencioso', 'Iluminación natural'],
-      image: '/images/IMG_7681-scaled-1024x576.jpg',
+      images: [
+        '/images/rooms_section/suite_1.webp',
+        '/images/rooms_section/suite_2.webp',
+        '/images/rooms_section/suite_3.webp'
+      ],
       wpMessage: 'Suite Relax'
     },
     {
@@ -22,7 +26,11 @@ const RoomsSection = () => {
       oldPrice: '$100.000',
       newPrice: '$50.000',
       features: ['Espacio práctico y cómodo', 'Excelente relación calidad-precio', 'Accesible a puntos turísticos'],
-      image: '/images/IMG_8027-scaled-1024x576.jpg',
+      images: [
+        '/images/rooms_section/individual_1.webp',
+        '/images/rooms_section/individual_2.webp',
+        '/images/rooms_section/individual_3.webp'
+      ],
       wpMessage: 'Descanso del Viajero'
     }
   ];
@@ -42,7 +50,21 @@ const RoomsSection = () => {
                 className="room-card"
                 hoverable
                 bordered={false}
-                cover={<img alt={room.name} src={room.image} className="room-image" />}
+                cover={
+                  <Image.PreviewGroup>
+                    <Carousel autoplay swipeToSlide draggable infinite={false} className="room-carousel">
+                      {room.images.map((img, index) => (
+                        <div key={index}>
+                          <Image
+                            src={img}
+                            alt={`${room.name} ${index + 1}`}
+                            className="room-image"
+                          />
+                        </div>
+                      ))}
+                    </Carousel>
+                  </Image.PreviewGroup>
+                }
               >
                 <div className="room-content">
                   <h3>{room.name}</h3>

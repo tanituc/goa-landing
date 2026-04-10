@@ -6,6 +6,11 @@ const HeroSection = () => {
     <section className="hero" id="inicio">
       <div className="hero-overlay"></div>
       <div className="hero-content">
+        <img 
+          src="/images/cropped-GOA_LOGO_BLANCO_NOTEXTO.png" 
+          alt="Goa Hostel Logo" 
+          className="hero-logo" 
+        />
         <h1>HOSTEL EN TERMAS DE RÍO HONDO</h1>
         <h2>Confort y Relax al Mejor Precio</h2>
         <p>Viví la mejor experiencia en aguas termales, con habitaciones cómodas y servicios premium.</p>

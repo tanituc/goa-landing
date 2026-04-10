@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   min-height: 100svh;
-  background-image: url('/images/PJAL0509-scaled-1024x768.jpg');
+  background-image: url('/images/main_0.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -13,8 +13,12 @@
 
 .hero-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(26, 46, 59, 0.6); /* --color-primary with opacity */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 46, 59, 0.6);
+  /* --color-primary with opacity */
   z-index: 1;
 }
 
@@ -24,6 +28,12 @@
   color: #fff;
   max-width: 800px;
   animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-logo {
+  max-width: 150px; /* Adjust size as needed */
+  margin: 0 auto 20px auto; /* Centers the logo horizontally and adds bottom margin */
+  display: block; /* Required for margin auto to work on img */
 }
 
 .hero h1 {
@@ -71,15 +81,24 @@
   .hero h1 {
     font-size: 4rem;
   }
+
   .hero h2 {
     font-size: 2rem;
   }
+
   .hero p {
     font-size: 1.3rem;
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
