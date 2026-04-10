@@ -21,7 +21,6 @@ const Navbar = () => {
   const onClose = () => setVisible(false);
 
   const navLinks = [
-    { title: 'Inicio', href: '#' },
     { title: 'Habitaciones', href: '#habitaciones' },
     { title: 'Servicios', href: '#servicios' },
     { title: 'Nosotros', href: '#nosotros' },
@@ -34,7 +33,14 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
-        <a href="#" className="navbar-logo">
+        <a 
+          href="#" 
+          className="navbar-logo"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <img 
             src={getLogoSrc()} 
             alt="GOA Hostel Logo" 

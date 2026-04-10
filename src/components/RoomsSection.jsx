@@ -68,9 +68,6 @@ const RoomsSection = () => {
                     >
                       <WhatsAppOutlined /> Reservar ahora
                     </a>
-                    <a href="#" className="room-btn-secondary">
-                      <InfoCircleOutlined /> Info
-                    </a>
                   </div>
                 </div>
               </Card>

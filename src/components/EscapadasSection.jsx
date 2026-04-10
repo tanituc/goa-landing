@@ -9,6 +9,7 @@ const EscapadasSection = () => {
     { id: 3, icon: '❤️', title: 'ESCAPADA ROMÁNTICA', desc: 'Días de descanso y noches románticas con la persona que amás' },
     { id: 4, icon: '🎒', title: 'ESCAPADA DE FINDE', desc: 'Desconectá un toque de la rutina' },
     { id: 5, icon: '👨‍👩‍👧‍👦', title: 'ESCAPADA CON QUIENES QUIERAS', desc: 'Si vienen juntos, la diversión se multiplica' },
+    { id: 6, icon: '🏍️', title: 'ESCAPADA GP', desc: 'Veni a ver las carreras' },
   ];
 
   return (
@@ -18,7 +19,7 @@ const EscapadasSection = () => {
           <h2>Tu escapada ideal en Termas de Río Hondo</h2>
           <p>El paquete perfecto para cada ocasión</p>
         </div>
-        
+
         <Row gutter={[24, 24]} justify="center">
           {escapadas.map(item => (
             <Col xs={24} sm={12} md={8} key={item.id}>
