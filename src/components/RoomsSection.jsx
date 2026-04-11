@@ -49,7 +49,7 @@ const RoomsSection = () => {
               <Card
                 className="room-card"
                 hoverable
-                bordered={false}
+                variant="borderless"
                 cover={
                   <Image.PreviewGroup>
                     <Carousel swipeToSlide draggable infinite={false} className="room-carousel">

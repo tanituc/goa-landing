@@ -26,7 +26,7 @@ const EscapadasSection = () => {
               <div className="escapada-flip-card">
                 <div className="escapada-flip-inner">
                   <div className="escapada-flip-front">
-                    <Card className="escapada-card" bordered={false}>
+                    <Card className="escapada-card" variant="borderless">
                       <div className="escapada-icon">{item.icon}</div>
                       <h4 className="escapada-title">{item.title}</h4>
                       <p className="escapada-desc">{item.desc}</p>
