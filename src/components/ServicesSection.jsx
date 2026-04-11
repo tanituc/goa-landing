@@ -8,7 +8,7 @@ const ServicesSection = () => {
     { id: 1, icon: <CoffeeOutlined />, text: 'Desayuno incluido' },
     { id: 2, icon: <WifiOutlined />, text: 'Wi-Fi de alta velocidad' },
     { id: 3, icon: <ExpandOutlined />, text: 'Pileta de aguas termales' },
-    { id: 4, icon: <CarOutlined />, text: 'Estacionamiento gratuito' },
+    { id: 4, icon: <CarOutlined />, text: 'Cochera privada' },
     { id: 5, icon: <InboxOutlined />, text: 'Baños privados' },
   ];
 
