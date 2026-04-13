@@ -3,7 +3,7 @@
 }
 
 .carousel-slide {
-  height: 100vh;
+  height: 100dvh;
   min-height: 500px;
   background-size: cover;
   background-position: center;
@@ -15,8 +15,11 @@
 
 .slide-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .slide-content {
@@ -93,11 +96,17 @@
   height: 4px !important;
   background: white !important;
 }
+
 .ant-carousel .slick-dots li.slick-active button {
   background: var(--color-accent) !important;
 }
 
 @media (min-width: 768px) {
-  .slide-content h3 { font-size: 3rem; }
-  .slide-content p { font-size: 1.3rem; }
+  .slide-content h3 {
+    font-size: 3rem;
+  }
+
+  .slide-content p {
+    font-size: 1.3rem;
+  }
 }

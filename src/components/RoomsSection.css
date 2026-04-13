@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
   width: 100%;
   max-width: 100vw;
-  padding: 40px 0; /* Let container handle side padding */
+  padding: 40px 0;
+  /* Let container handle side padding */
 }
 
 .rooms-section .container {
@@ -15,13 +16,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  overflow-x: hidden; /* Contains the row negative margins */
+  overflow-x: hidden;
+  /* Contains the row negative margins */
 }
 
 .room-card {
   border-radius: var(--radius) !important;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08) !important;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -182,15 +184,19 @@
   .section-header h2 {
     font-size: 1.8rem;
   }
+
   .room-content h3 {
     font-size: 1.5rem;
   }
+
   .room-new-price {
     font-size: 1.5rem;
   }
+
   .room-actions {
     flex-direction: column;
   }
+
   .room-btn-primary {
     width: 100%;
   }

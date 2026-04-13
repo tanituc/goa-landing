@@ -21,7 +21,7 @@ function App() {
         <div className="snap-section"><ServicesSection /></div>
         <div className="snap-section"><RoomsSection /></div>
         <div className="snap-section"><AboutSection /></div>
-        <div className="snap-section" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <div className="snap-section" style={{ display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}>
           <LocationSection />
           <Footer />
         </div>

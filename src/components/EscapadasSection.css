@@ -33,13 +33,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .escapada-card {
   height: 100%;
   border-radius: var(--radius) !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
@@ -81,7 +81,8 @@
 /* Flip Card Styles */
 .escapada-flip-card {
   perspective: 1000px;
-  height: 380px; /* Forced taller height */
+  height: 380px;
+  /* Forced taller height */
   width: 100%;
 }
 
@@ -124,7 +125,7 @@
 }
 
 .escapada-flip-back-overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
   padding: 30px 15px;
   text-align: center;
@@ -137,4 +138,3 @@
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-
