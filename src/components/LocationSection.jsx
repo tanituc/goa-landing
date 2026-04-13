@@ -2,7 +2,7 @@ import React from 'react';
 
 const LocationSection = () => {
   return (
-    <section className="location-section" style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+    <section className="location-section" id="ubicacion" style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
       <div className="container section-padding" style={{ paddingBottom: '30px', paddingTop: '100px', flexShrink: 0 }}>
         <div className="section-header text-center">
           <h2>GOa – La mejor ubicación</h2>

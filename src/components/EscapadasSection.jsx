@@ -40,7 +40,7 @@ const EscapadasSection = () => {
   }, []);
 
   return (
-    <section className="section-padding escapadas-section">
+    <section className="section-padding escapadas-section" id="escapadas">
       <div className="container">
         <div className="section-header text-center">
           <h2>Elegit tu tipo de escapada en Termas de Río Hondo</h2>

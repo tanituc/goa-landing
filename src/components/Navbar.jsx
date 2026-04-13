@@ -21,10 +21,25 @@ const Navbar = () => {
   const onClose = () => setVisible(false);
 
   const navLinks = [
+    { title: 'Inicio', href: '#inicio' },
+    { title: 'Promociones', href: '#promociones' },
+    { title: 'Escapadas', href: '#escapadas' },
     { title: 'Habitaciones', href: '#habitaciones' },
     { title: 'Servicios', href: '#servicios' },
     { title: 'Nosotros', href: '#nosotros' },
+    { title: 'Ubicación', href: '#ubicacion' },
   ];
+
+  const scrollToSection = (e, href) => {
+    e.preventDefault();
+    if (href === '#inicio') {
+      const container = document.querySelector('.snap-container');
+      if (container) container.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const target = document.querySelector(href);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   const getLogoSrc = () => {
     return "/images/cropped-GOA_LOGO_BLANCO_NOTEXTO-300x300.png";
@@ -34,12 +49,9 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
         <a
-          href="#"
+          href="#inicio"
           className="navbar-logo"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
+          onClick={(e) => scrollToSection(e, '#inicio')}
         >
           <img
             src={getLogoSrc()}
@@ -50,7 +62,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="navbar-menu">
           {navLinks.map((link) => (
-            <a key={link.title} href={link.href} className="nav-link">
+            <a key={link.title} href={link.href} className="nav-link" onClick={(e) => scrollToSection(e, link.href)}>
               {link.title}
             </a>
           ))}
@@ -81,7 +93,7 @@ const Navbar = () => {
         >
           <div className="drawer-nav">
             {navLinks.map((link) => (
-              <a key={link.title} href={link.href} className="drawer-link" onClick={onClose}>
+              <a key={link.title} href={link.href} className="drawer-link" onClick={(e) => { scrollToSection(e, link.href); onClose(); }}>
                 {link.title}
               </a>
             ))}
