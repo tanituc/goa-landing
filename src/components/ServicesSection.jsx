@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import { CoffeeOutlined, WifiOutlined, ExpandOutlined, CarOutlined, InboxOutlined } from '@ant-design/icons';
+import { CoffeeOutlined, WifiOutlined, ExpandOutlined, CarOutlined, HomeOutlined, CloudOutlined, DesktopOutlined, FireOutlined } from '@ant-design/icons';
 import './ServicesSection.css';
 
 const ServicesSection = () => {
@@ -9,7 +9,10 @@ const ServicesSection = () => {
     { id: 2, icon: <WifiOutlined />, text: 'Wi-Fi de alta velocidad' },
     { id: 3, icon: <ExpandOutlined />, text: 'Pileta de aguas termales' },
     { id: 4, icon: <CarOutlined />, text: 'Cochera privada' },
-    { id: 5, icon: <InboxOutlined />, text: 'Baños privados' },
+    { id: 5, icon: <HomeOutlined />, text: 'Baños privados' },
+    { id: 6, icon: <CloudOutlined />, text: 'Aire acondicionado' },
+    { id: 7, icon: <DesktopOutlined />, text: 'Smart TV' },
+    { id: 8, icon: <FireOutlined />, text: 'Quincho con Asador' },
   ];
 
   return (

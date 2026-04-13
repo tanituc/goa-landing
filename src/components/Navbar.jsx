@@ -33,17 +33,17 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
-        <a 
-          href="#" 
+        <a
+          href="#"
           className="navbar-logo"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
-          <img 
-            src={getLogoSrc()} 
-            alt="GOA Hostel Logo" 
+          <img
+            src={getLogoSrc()}
+            alt="GOA Hostel Logo"
           />
         </a>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
 
         {/* Mobile Drawer */}
         <Drawer
-          title={<img src="/images/cropped-LOGO_AZUL_NOTEXTO_FONDO-150x150.png" alt="GOA Logo" style={{ height: 40 }} />}
+          title={''}
           placement="right"
           onClose={onClose}
           open={visible}

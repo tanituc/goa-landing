@@ -1,3 +1,19 @@
+// Polyfill: force touchmove/touchstart listeners to be passive by default
+// This silences the "[Violation] non-passive event listener" warning from third-party libs (Ant Design, rc-*)
+;(function () {
+  const orig = EventTarget.prototype.addEventListener
+  EventTarget.prototype.addEventListener = function (type, fn, options) {
+    if (type === 'touchmove' || type === 'touchstart') {
+      const opts = typeof options === 'object'
+        ? { passive: true, ...options }
+        : { passive: true, capture: !!options }
+      orig.call(this, type, fn, opts)
+    } else {
+      orig.call(this, type, fn, options)
+    }
+  }
+})()
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ConfigProvider } from 'antd'

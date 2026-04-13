@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Card, Row, Col } from 'antd';
 import './EscapadasSection.css';
+
+const FLIP_DURATION   = 1800; // ms que la card queda mostrando la imagen
+const CYCLE_INTERVAL  = 2800; // ms entre cada card que se voltea
 
 const EscapadasSection = () => {
   const escapadas = [
@@ -12,6 +15,30 @@ const EscapadasSection = () => {
     { id: 6, icon: '🏍️', title: 'AVENTURA', desc: 'Veni a ver las carreras', image: '/images/escapes_section/motos.webp' },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(null);
+  const flipBackTimer = useRef(null);
+  const cycleIndex    = useRef(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const idx = cycleIndex.current % escapadas.length;
+      cycleIndex.current += 1;
+
+      setActiveIndex(idx);
+
+      // Voltear de regreso después de FLIP_DURATION
+      clearTimeout(flipBackTimer.current);
+      flipBackTimer.current = setTimeout(() => {
+        setActiveIndex(null);
+      }, FLIP_DURATION);
+    }, CYCLE_INTERVAL);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(flipBackTimer.current);
+    };
+  }, []);
+
   return (
     <section className="section-padding escapadas-section">
       <div className="container">
@@ -21,9 +48,9 @@ const EscapadasSection = () => {
         </div>
 
         <Row gutter={[24, 24]} justify="center">
-          {escapadas.map(item => (
+          {escapadas.map((item, index) => (
             <Col xs={24} sm={12} md={8} key={item.id}>
-              <div className="escapada-flip-card">
+              <div className={`escapada-flip-card${activeIndex === index ? ' auto-flipped' : ''}`}>
                 <div className="escapada-flip-inner">
                   <div className="escapada-flip-front">
                     <Card className="escapada-card" variant="borderless">

@@ -95,7 +95,8 @@
   transform-style: preserve-3d;
 }
 
-.escapada-flip-card:hover .escapada-flip-inner {
+.escapada-flip-card:hover .escapada-flip-inner,
+.escapada-flip-card.auto-flipped .escapada-flip-inner {
   transform: rotateY(180deg);
 }
 
