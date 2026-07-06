@@ -9,7 +9,7 @@
 }
 
 .navbar-scrolled {
-  background: var(--color-primary);
+  background: var(--ant-color-primary);
   padding: 10px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
@@ -49,19 +49,19 @@
 
 .drawer-link {
   font-size: 1.2rem;
-  color: var(--color-text);
+  color: var(--ant-color-text-base);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .drawer-link:hover {
-  color: var(--color-accent);
+  color: var(--ant-color-info);
 }
 
 .drawer-cta-btn {
   display: inline-block;
-  background: var(--color-cta);
+  background: var(--ant-color-error);
   color: #fff;
   text-align: center;
   padding: 12px 20px;
@@ -96,11 +96,11 @@
   }
 
   .nav-link:hover {
-    color: var(--color-accent);
+    color: var(--ant-color-info);
   }
 
   .navbar-cta-btn {
-    background: var(--color-cta);
+    background: var(--ant-color-error);
     color: #fff;
     padding: 10px 24px;
     border-radius: var(--radius);

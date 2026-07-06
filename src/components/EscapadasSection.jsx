@@ -9,7 +9,7 @@ const EscapadasSection = () => {
   const escapadas = [
     { id: 1, icon: '🌹', title: 'ROMÁNTICA', desc: 'Días de descanso y noches románticas con la persona que amás', image: '/images/escapes_section/romantica.webp' },
     { id: 2, icon: '🧉', title: 'AMIGOS', desc: 'Risas, relax y pura diversión', image: '/images/escapes_section/grupal.webp' },
-    { id: 3, icon: '🥂', title: 'PAREJAS', desc: 'Más risas, más recuerdos, más experiencias', image: '/images/escapes_section/parejas.webp' },
+    { id: 3, icon: '🥂', title: 'PAREJAS', desc: 'Más risas, más recuerdos, más experiencias', image: '/images/promo_section/relax.webp' },
     { id: 4, icon: '☀️', title: 'DE FINDE', desc: 'Desconectá un toque de la rutina', image: '/images/escapes_section/finde.webp' },
     { id: 5, icon: '👨‍👩‍👧‍👦', title: 'EN GRANDE', desc: 'Si vienen juntos, la diversión se multiplica', image: '/images/escapes_section/asador.webp' },
     { id: 6, icon: '🏍️', title: 'AVENTURA', desc: 'Veni a ver las carreras', image: '/images/escapes_section/motos.webp' },

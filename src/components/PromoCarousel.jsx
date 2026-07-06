@@ -25,7 +25,7 @@ const PromoCarousel = () => {
     },
     {
       id: 3,
-      image: '/images/promo_section/relax.webp',
+      image: '/images/escapes_section/parejas.webp',
       badge: '🌊 Relax',
       title: 'Agua termal y tiempo sin apuro',
       desc: 'Un refugio para soltar el cuerpo y dejar que el día fluya',

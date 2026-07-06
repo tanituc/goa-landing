@@ -1,5 +1,5 @@
 .footer-section {
-  background: var(--color-primary);
+  background: var(--ant-color-primary);
   color: #fff;
   padding: 60px 0 20px;
 }
@@ -44,7 +44,7 @@
 }
 
 .contact-links a:hover {
-  color: var(--color-accent);
+  color: var(--ant-color-info);
 }
 
 .social-links {
@@ -66,7 +66,7 @@
 }
 
 .social-links a:hover {
-  background: var(--color-accent);
+  background: var(--ant-color-info);
   transform: translateY(-3px);
 }
 
@@ -87,7 +87,7 @@
 }
 
 .legal-links a:hover {
-  color: var(--color-accent);
+  color: var(--ant-color-info);
 }
 
 .footer-bottom {

@@ -14,7 +14,7 @@
 
 .section-header h2 {
   font-size: 2.2rem;
-  color: var(--color-primary);
+  color: var(--ant-color-primary);
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -29,7 +29,7 @@
 }
 
 .escapadas-section {
-  background: var(--color-bg);
+  background: var(--ant-color-bg-base);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +65,7 @@
 
 .escapada-title {
   font-size: 1.2rem;
-  color: var(--color-primary);
+  color: var(--ant-color-primary);
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -116,7 +116,7 @@
 }
 
 .escapada-flip-back {
-  background-color: var(--color-primary);
+  background-color: var(--ant-color-primary);
   color: white;
   transform: rotateY(180deg);
   background-size: cover;

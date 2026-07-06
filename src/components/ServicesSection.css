@@ -1,5 +1,5 @@
 .services-section {
-  background: var(--color-primary);
+  background: var(--ant-color-primary);
   color: white;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
 
 .service-icon {
   font-size: 3rem;
-  color: var(--color-accent);
+  color: var(--ant-color-info);
   margin-bottom: 20px;
 }
 

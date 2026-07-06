@@ -1,5 +1,5 @@
 .promos {
-  background: var(--color-primary);
+  background: var(--ant-color-primary);
 }
 
 .carousel-slide {
@@ -33,7 +33,7 @@
 
 .slide-badge {
   display: inline-block;
-  background: var(--color-accent);
+  background: var(--ant-color-info);
   color: white;
   padding: 10px 28px;
   border-radius: 50px;
@@ -74,14 +74,14 @@
 }
 
 .price-new {
-  color: var(--color-cta);
+  color: var(--ant-color-error);
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .slide-cta {
-  background: #25D366 !important;
-  border-color: #25D366 !important;
+  background: var(--ant-color-success) !important;
+  border-color: var(--ant-color-success) !important;
   border-radius: 25px !important;
   font-weight: bold;
 }
@@ -98,7 +98,7 @@
 }
 
 .ant-carousel .slick-dots li.slick-active button {
-  background: var(--color-accent) !important;
+  background: var(--ant-color-info) !important;
 }
 
 @media (min-width: 768px) {

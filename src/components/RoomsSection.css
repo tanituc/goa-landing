@@ -1,5 +1,5 @@
 .rooms-section {
-  background: var(--color-bg);
+  background: var(--ant-color-bg-base);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +62,7 @@
 
 .room-content h3 {
   font-size: 1.8rem;
-  color: var(--color-primary);
+  color: var(--ant-color-primary);
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -90,7 +90,7 @@
 }
 
 .feat-icon {
-  color: var(--color-accent);
+  color: var(--ant-color-info);
   margin-right: 10px;
   font-size: 1.2rem;
   margin-top: 3px;
@@ -115,7 +115,7 @@
 }
 
 .room-new-price {
-  color: var(--color-primary);
+  color: var(--ant-color-primary);
   font-size: 1.8rem;
   font-weight: 800;
 }
@@ -133,7 +133,7 @@
 
 .room-btn-primary {
   flex: 2;
-  background: var(--color-cta);
+  background: var(--ant-color-error);
   color: white;
   text-align: center;
   padding: 14px 20px;
@@ -150,7 +150,7 @@
 }
 
 .room-btn-primary:hover {
-  background: #e0961b;
+  background: var(--ant-color-warning);
   color: white;
   transform: translateY(-2px);
 }
@@ -158,8 +158,8 @@
 .room-btn-secondary {
   flex: 1;
   background: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  color: var(--ant-color-primary);
+  border: 2px solid var(--ant-color-primary);
   text-align: center;
   padding: 12px 20px;
   border-radius: var(--radius);
@@ -170,7 +170,7 @@
 }
 
 .room-btn-secondary:hover {
-  background: var(--color-primary);
+  background: var(--ant-color-primary);
   color: white;
 }
 
