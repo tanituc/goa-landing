@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <p className="footer-desc">
               Confort y relax al mejor precio en Termas de Río Hondo. 
-              Viví la mejor experiencia en aguas termales con servicios premium.
+              Viví la mejor experiencia en aguas termales con espacios pensados para disfrutar.
             </p>
           </Col>
 

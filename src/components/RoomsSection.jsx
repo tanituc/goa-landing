@@ -11,6 +11,11 @@ const RoomsSection = () => {
       tagline: 'El refugio perfecto para quienes buscan privacidad y confort absoluto.',
       oldPrice: '$100.000',
       newPrice: '$50.000',
+      priceUnit: '/ noche',
+      priceNote: '(para 2 personas en estadías de 2 o más noches)',
+      extraNote: '(opcional, suma conversión):',
+      extraOption: 'Consultanos por opciones para más personas',
+      extraOptionLink: 'https://wa.me/5493812497721?text=Hola,%20me%20gustar%C3%ADa%20consultar%20por%20opciones%20para%20m%C3%A1s%20personas%20en%20la%20Suite%20Relax',
       features: ['Cama doble', 'Ambiente silencioso', 'Iluminación natural'],
       images: [
         '/images/rooms_section/suite_1.webp',
@@ -23,8 +28,10 @@ const RoomsSection = () => {
       id: 2,
       name: 'Descanso del Viajero',
       tagline: 'La opción perfecta para aventureros y viajeros que buscan comodidad a un precio accesible.',
-      oldPrice: '$100.000',
-      newPrice: '$50.000',
+      oldPrice: '$35.000',
+      newPrice: '$25.000',
+      priceUnit: '/ persona / noche',
+      priceNote: '(precio para grupos o estadías de 2 o más noches)',
       features: ['Espacio práctico y cómodo', 'Excelente relación calidad-precio', 'Accesible a puntos turísticos'],
       images: [
         '/images/rooms_section/individual_1.webp',
@@ -76,9 +83,32 @@ const RoomsSection = () => {
                     ))}
                   </ul>
 
-                  <div className="room-price-box">
-                    <span className="room-old-price">{room.oldPrice}</span>
-                    <span className="room-new-price">{room.newPrice} <span>/ noche</span></span>
+                  <div className="room-price-section">
+                    <span className="room-price-label">Precio:</span>
+                    <div className="room-price-details">
+                      {room.oldPrice && <span className="room-old-price">{room.oldPrice}</span>}
+                      <div className="room-new-price-row">
+                        <span className="room-new-price">{room.newPrice}</span>
+                        <span className="room-price-unit"> {room.priceUnit}</span>
+                      </div>
+                      {room.priceNote && <span className="room-price-note">{room.priceNote}</span>}
+                    </div>
+
+                    {room.extraNote && (
+                      <div className="room-extra-section">
+                        <span className="room-extra-note">{room.extraNote}</span>
+                        {room.extraOption && (
+                          <a
+                            href={room.extraOptionLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="room-extra-option"
+                          >
+                            💬 {room.extraOption}
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   <div className="room-actions">
