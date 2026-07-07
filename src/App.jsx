@@ -6,6 +6,7 @@ import EscapadasSection from './components/EscapadasSection'
 import ServicesSection from './components/ServicesSection'
 import RoomsSection from './components/RoomsSection'
 import AboutSection from './components/AboutSection'
+import GalleryCarousel from './components/GalleryCarousel'
 import LocationSection from './components/LocationSection'
 import WhatsAppButton from './components/WhatsAppButton'
 import Footer from './components/Footer'
@@ -21,6 +22,7 @@ function App() {
         <div className="snap-section"><ServicesSection /></div>
         <div className="snap-section"><RoomsSection /></div>
         <div className="snap-section"><AboutSection /></div>
+        <div className="snap-section"><GalleryCarousel /></div>
         <div className="snap-section" style={{ display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}>
           <LocationSection />
           <Footer />

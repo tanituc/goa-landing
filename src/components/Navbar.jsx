@@ -27,6 +27,7 @@ const Navbar = () => {
     { title: 'Habitaciones', href: '#habitaciones' },
     { title: 'Servicios', href: '#servicios' },
     { title: 'Nosotros', href: '#nosotros' },
+    { title: 'Galería', href: '#galeria' },
     { title: 'Ubicación', href: '#ubicacion' },
   ];
 
